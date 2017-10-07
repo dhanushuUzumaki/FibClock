@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
 body{
-	background: #e8e5fb;
+	background: #F5F5F5;
+	font-family: 'Passion One';
 }
 .main{
 	position: relative;
@@ -70,5 +73,26 @@ footer{
 
 a,a:hover,a:visited{
 	text-decoration: none;
-	color: black;
+	color: #414141;
+}
+
+.container div {
+	border-color: #414141;
+	border-width: 3px;
+}
+
+.title {
+	font-size: 60px;
+	color: #414141;
+	display: inline;
+}
+
+.info {
+	font-size: 15px !important;
+	position: relative;
+	bottom: 35px;
+}
+
+.info span {
+	color: #03A9F4;	
 }
