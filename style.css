@@ -13,7 +13,7 @@ body{
 .container{
 	background: #FFF;
 	max-width: 79vh;
-	min-height: 50vh;
+	min-height: 45vh;
 	position: relative;
 	margin: 0 auto;
 	top: 5vh;
@@ -84,15 +84,4 @@ a,a:hover,a:visited{
 .title {
 	font-size: 60px;
 	color: #414141;
-	display: inline;
-}
-
-.info {
-	font-size: 15px !important;
-	position: relative;
-	bottom: 35px;
-}
-
-.info span {
-	color: #03A9F4;	
 }
