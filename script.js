@@ -23,11 +23,17 @@ $(document).ready(function() {
 		5 : ".five"
 	}
 
+	var colors = {
+		green: '#4CAF50',
+		blue: '#03A9F4',
+		white: '#FAFAFA',
+		red: '#FF4436'
+	}
 
 	function clearAllBoxes() {
 		for(i in boxes) {
 			$(boxes[i]).animate({
-				backgroundColor: "white"
+				backgroundColor: colors.white
 			},{ duration: 1000, queue: false } );
 		}
 	}
@@ -39,7 +45,7 @@ $(document).ready(function() {
 		_hour.forEach(function(elem){
 			if(_both.indexOf(elem)<0){
 				$(boxes[elem]).animate({
-					backgroundColor: "red"
+					backgroundColor: colors.red
 				},{ duration: 1000, queue: false } );
 			}
 		});
@@ -47,14 +53,14 @@ $(document).ready(function() {
 		_minutes.forEach(function(elem){
 			if(_both.indexOf(elem)<0){
 				$(boxes[elem]).animate({
-				 	backgroundColor: "green"
+				 	backgroundColor: colors.green
 				},{ duration: 1000, queue: false } );
 			}
 		});
 
 		_both.forEach(function(elem){
 			$(boxes[elem]).animate({
-				 backgroundColor: "blue"
+				 backgroundColor: colors.blue
 			},{ duration: 1000, queue: false } );
 		});
 
